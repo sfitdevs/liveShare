@@ -85,6 +85,16 @@ function getRoomIdBySocketId(socketId) {
     return null;
 }
 
+// function for helping user
+// function getRoomIdBySocketId(socketId) {
+//     for (const roomId in rooms) {
+//         if (rooms[roomId].host === socketId || rooms[roomId].clients.includes(socketId)) {
+//             return roomId;
+//         }
+//     }
+//     return null;
+// }
+
 
 // Start the server
 const PORT = process.env.PORT || 3000;
